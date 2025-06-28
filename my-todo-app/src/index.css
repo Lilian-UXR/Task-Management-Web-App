@@ -1,0 +1,48 @@
+.todo {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #488a92;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ccf6f6;
+  color: #000000;
+}
+
+input[type="text"] {
+  font-size: 20px;
+  padding: 15px;
+  border: none;
+  background-color: #ccf6f6;
+  color: #000000;
+  border-radius: 5px;
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #a6edf2;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
