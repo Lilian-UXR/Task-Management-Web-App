@@ -10,7 +10,11 @@ function App() {
         <ul>
           <li>
             <Link to="/">Home</Link>
+          </li>
+          <li>
             <Link to="/todo">To Do</Link>
+          </li>
+          <li>
             <Link to="/contact">Contact Form</Link>
           </li>
         </ul>
