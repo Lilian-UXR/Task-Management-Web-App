@@ -37,7 +37,7 @@ function ToDo() {
 
       <ul>
         {tasks.map((task, index) => (
-          <li key={index}>
+          <li className="todo-item" key={index}>
             <span className="text">{task}</span>
             <button className="deletebtn" onClick={() => deleteTask(index)}>
               Delete

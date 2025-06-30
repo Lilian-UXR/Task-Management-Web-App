@@ -9,6 +9,17 @@
   text-align: center;
 }
 
+.screen {
+  display: flex;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
 h1 {
   font-size: 20px;
 }
@@ -52,7 +63,7 @@ ul {
   padding: 0;
 }
 
-li {
+.todo-item {
   font-size: 20px;
   padding: 10px;
   background-color: #a6edf2;
@@ -63,7 +74,7 @@ li {
   align-items: center;
 }
 
-nav {
+.sidebar {
   margin: 0;
   padding: 0;
   width: 200px;
@@ -72,14 +83,14 @@ nav {
   height: 100vh;
 }
 
-ol li a {
+.sidebar a {
   display: block;
   text-decoration: none;
   color: #ffffff;
   padding: 15px;
 }
 
-ol li a:hover {
+.sidebar a:hover {
   text-decoration: none;
   color: #a6edf2;
 }
