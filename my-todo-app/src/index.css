@@ -104,3 +104,21 @@ ul {
   align-items: center;
   gap: 10px;
 }
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+  }
+  .screen {
+    flex-direction: column;
+  }
+}

@@ -5,12 +5,16 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import House from "./images/House.png";
 import Contact from "./images/Contact.png";
 import ToDoList from "./images/To Do List.png";
+import Hamburger from "./images/Hamburger.png";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <div className="screen">
+          <nav className="mobile">
+            <img src={Hamburger} alt="hamburger menu" />
+          </nav>
           <nav className="sidebar">
             <ul>
               <li>
