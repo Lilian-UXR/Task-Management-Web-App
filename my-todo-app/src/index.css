@@ -59,8 +59,8 @@ textarea {
   border-radius: 5px;
 }
 
-ul {
-  padding: 0;
+.contact-form {
+  list-style-type: none;
 }
 
 .todo-item {

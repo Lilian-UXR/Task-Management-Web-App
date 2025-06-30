@@ -8,36 +8,42 @@ import ToDoList from "../images/To Do List.png";
 function Hamburger() {
   const [isOpen, setisOpen] = useState(false);
 
+  function handleOpen() {
+    setisOpen((prev) => !prev);
+  }
+
   return (
     <nav className="mobile">
       <div className="mobile-wrapper">
-        <img src={HamburgerIcon} alt="hamburger menu" />
-        <ul className="dropdown">
-          <li>
-            <Link to="/">
-              <div className="mobile-link">
-                <img src={House} alt="house icon" />
-                <p>Home</p>
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link to="/todo">
-              <div className="mobile-link">
-                <img src={ToDoList} alt="to do icon" />
-                <p>To Do</p>
-              </div>
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact">
-              <div className="mobile-link">
-                <img src={Contact} alt="contact icon" />
-                <p>Contact Form</p>
-              </div>
-            </Link>
-          </li>
-        </ul>
+        <img src={HamburgerIcon} onClick={handleOpen} alt="hamburger menu" />
+        {isOpen && (
+          <ul className="dropdown">
+            <li>
+              <Link to="/">
+                <div className="mobile-link" onClick={handleOpen}>
+                  <img src={House} alt="house icon" />
+                  <p>Home</p>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link to="/todo">
+                <div className="mobile-link" onClick={handleOpen}>
+                  <img src={ToDoList} alt="to do icon" />
+                  <p>To Do</p>
+                </div>
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact">
+                <div className="mobile-link" onClick={handleOpen}>
+                  <img src={Contact} alt="contact icon" />
+                  <p>Contact Form</p>
+                </div>
+              </Link>
+            </li>
+          </ul>
+        )}
       </div>
     </nav>
   );
