@@ -14,16 +14,27 @@ function App() {
           <nav className="sidebar">
             <ul>
               <li>
-                <img src={House} alt="house icon" />
-                <Link to="/">Home</Link>
+                <Link to="/">
+                  <div className="nav-link">
+                    <img src={House} alt="house icon" /> <p>Home</p>
+                  </div>
+                </Link>
               </li>
               <li>
-                <img src={ToDoList} alt="to do icon" />
-                <Link to="/todo">To Do</Link>
+                <Link to="/todo">
+                  <div className="nav-link">
+                    <img src={ToDoList} alt="to do icon" />
+                    <p>To Do</p>
+                  </div>
+                </Link>
               </li>
-              <li>
-                <img src={Contact} alt="contact icon" />
-                <Link to="/contact">Contact Form</Link>
+              <li className="nav-link">
+                <Link to="/contact">
+                  <div className="nav-link">
+                    <img src={Contact} alt="contact icon" />
+                    <p>Contact Form</p>
+                  </div>
+                </Link>
               </li>
             </ul>
           </nav>
