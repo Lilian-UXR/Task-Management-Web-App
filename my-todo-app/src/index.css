@@ -32,7 +32,7 @@ input[type="text"] {
   border-radius: 5px;
 }
 
-ol {
+ul {
   padding: 0;
 }
 
@@ -45,4 +45,20 @@ li {
   border-radius: 5px;
   display: flex;
   align-items: center;
+}
+
+ol li {
+  background-color: #244141;
+  display: flex;
+  justify-content: left;
+}
+
+ol li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ol li a:hover {
+  text-decoration: none;
+  color: #a6edf2;
 }

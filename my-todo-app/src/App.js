@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <ul>
+        <ol>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -17,7 +17,7 @@ function App() {
           <li>
             <Link to="/contact">Contact Form</Link>
           </li>
-        </ul>
+        </ol>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/todo" element={<ToDo />} />
