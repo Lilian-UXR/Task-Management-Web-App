@@ -59,14 +59,18 @@ li {
 }
 
 ol li {
+  margin: 0;
+  padding: 0;
+  width: 200px;
   background-color: #244141;
-  display: flex;
-  justify-content: left;
+  overflow: auto;
 }
 
 ol li a {
+  display: block;
   text-decoration: none;
   color: #ffffff;
+  padding: 15px;
 }
 
 ol li a:hover {
