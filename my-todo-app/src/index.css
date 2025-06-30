@@ -113,12 +113,37 @@ ul {
   .sidebar {
     display: none;
   }
+  .mobile-wrapper {
+    position: relative;
+  }
   .mobile {
     display: flex;
     justify-content: end;
     margin: 10px;
+    align-items: center;
   }
   .screen {
     flex-direction: column;
+  }
+  .dropdown {
+    background-color: #244141;
+    list-style-type: none;
+    position: absolute;
+    top: 90%;
+    right: 0;
+    padding: 10px;
+  }
+  .dropdown a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .mobile-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+  }
+  .mobile-link img {
+    width: 50px;
   }
 }
