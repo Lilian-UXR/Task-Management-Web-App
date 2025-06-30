@@ -1,47 +1,17 @@
 import Home from "./Components/Home.jsx";
 import ToDo from "./Components/todo.jsx";
 import ContactForm from "./Components/contact.jsx";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import House from "./images/House.png";
-import Contact from "./images/Contact.png";
-import ToDoList from "./images/To Do List.png";
-import Hamburger from "./images/Hamburger.png";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Sidebar from "./Components/sidebar.jsx";
+import Hamburger from "./Components/hamburger.jsx";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <div className="screen">
-          <nav className="mobile">
-            <img src={Hamburger} alt="hamburger menu" />
-          </nav>
-          <nav className="sidebar">
-            <ul>
-              <li>
-                <Link to="/">
-                  <div className="nav-link">
-                    <img src={House} alt="house icon" /> <p>Home</p>
-                  </div>
-                </Link>
-              </li>
-              <li>
-                <Link to="/todo">
-                  <div className="nav-link">
-                    <img src={ToDoList} alt="to do icon" />
-                    <p>To Do</p>
-                  </div>
-                </Link>
-              </li>
-              <li className="nav-link">
-                <Link to="/contact">
-                  <div className="nav-link">
-                    <img src={Contact} alt="contact icon" />
-                    <p>Contact Form</p>
-                  </div>
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          <Hamburger />
+          <Sidebar />
           <div className="main">
             <Routes>
               <Route path="/" element={<Home />} />
