@@ -21,30 +21,32 @@ function ToDo() {
   }
 
   return (
-    <div className="todo">
-      <h1>To Do</h1>
-      <div>
-        <input
-          type="text"
-          placeholder="Task..."
-          value={newTask}
-          onChange={handleInputChange}
-        />
-        <button className="addbtn" onClick={addTask}>
-          ADD
-        </button>
-      </div>
+    <div className="todo-box">
+      <div className="todo">
+        <h1>To Do</h1>
+        <div className="task-add">
+          <input
+            type="text"
+            placeholder="Task..."
+            value={newTask}
+            onChange={handleInputChange}
+          />
+          <button className="addbtn" onClick={addTask}>
+            ADD
+          </button>
+        </div>
 
-      <ul>
-        {tasks.map((task, index) => (
-          <li className="todo-item" key={index}>
-            <span className="text">{task}</span>
-            <button className="deletebtn" onClick={() => deleteTask(index)}>
-              Delete
-            </button>
-          </li>
-        ))}
-      </ul>
+        <ul>
+          {tasks.map((task, index) => (
+            <li className="todo-item" key={index}>
+              <span className="text">{task}</span>
+              <button className="deletebtn" onClick={() => deleteTask(index)}>
+                Delete
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

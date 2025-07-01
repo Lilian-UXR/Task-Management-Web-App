@@ -13,6 +13,7 @@ function App() {
           <Hamburger />
           <Sidebar />
           <div className="main">
+            <h2>Hello! Let's get working today.</h2>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/todo" element={<ToDo />} />
