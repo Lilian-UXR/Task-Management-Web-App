@@ -1,7 +1,8 @@
-import React, { useState, useReducer } from "react";
+import React, { useState, useReducer, useContext } from "react";
+import { TaskContext } from "../App";
 
 function ToDo() {
-  const [tasks, setTasks] = useState([]);
+  const { tasks, setTasks } = useContext(TaskContext);
   const [newTask, setNewTask] = useState("");
   const initialState = { tasks: tasks, filter: "ALL" };
   const [state, dispatch] = useReducer(reducer, initialState);

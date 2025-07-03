@@ -4,8 +4,12 @@ import ContactForm from "./Components/contact.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./Components/sidebar.jsx";
 import Hamburger from "./Components/hamburger.jsx";
+import { createContext, useState } from "react";
 
-function App() {
+export const TaskContext = createContext(null);
+
+export function App() {
+  const [tasks, setTasks] = useState([]);
   return (
     <div className="App">
       <Router>
@@ -14,16 +18,16 @@ function App() {
           <Sidebar />
           <div className="main">
             <h2>Hello! Let's get working today.</h2>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/todo" element={<ToDo />} />
-              <Route path="/contact" element={<ContactForm />} />
-            </Routes>
+            <TaskContext value={{ tasks, setTasks }}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/todo" element={<ToDo />} />
+                <Route path="/contact" element={<ContactForm />} />
+              </Routes>
+            </TaskContext>
           </div>
         </div>
       </Router>
     </div>
   );
 }
-
-export default App;
