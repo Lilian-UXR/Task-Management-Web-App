@@ -182,4 +182,28 @@ textarea {
   .todo-box {
     padding: 1rem;
   }
+  input[type="text"],
+  input[type="email"] {
+    width: 150px;
+    font-size: 20px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  textarea {
+    width: 150px;
+    font-size: 20px;
+    padding: 15px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .contact-form {
+    list-style-type: none;
+    background-color: #ccf6f6;
+    padding: 15px;
+  }
 }
