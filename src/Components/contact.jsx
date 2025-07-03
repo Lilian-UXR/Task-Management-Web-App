@@ -15,50 +15,52 @@ function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <ul className="contact-form">
-        <li>
-          <label>
-            First name:
-            <input
-              type="text"
-              name="firstname"
-              value={inputs.firstname || ""}
-              onChange={handleChange}
-            />
-          </label>
-        </li>
-        <li>
-          <label>
-            Last name:
-            <input
-              type="text"
-              name="lastname"
-              value={inputs.lastname || ""}
-              onChange={handleChange}
-            />
-          </label>
-        </li>
-        <li>
-          <label>
-            Email:
-            <input
-              type="email"
-              name="email"
-              value={inputs.email || ""}
-              onChange={handleChange}
-            />
-          </label>
-        </li>
-        <li>
-          <label>
-            Message:
-            <textarea name="message" onChange={handleChange} />
-          </label>
-        </li>
-        <input type="submit" />
-      </ul>
-    </form>
+    <div className="contact-box">
+      <form onSubmit={handleSubmit}>
+        <ul className="contact-form">
+          <li>
+            <label>
+              First name:
+              <input
+                type="text"
+                name="firstname"
+                value={inputs.firstname || ""}
+                onChange={handleChange}
+              />
+            </label>
+          </li>
+          <li>
+            <label>
+              Last name:
+              <input
+                type="text"
+                name="lastname"
+                value={inputs.lastname || ""}
+                onChange={handleChange}
+              />
+            </label>
+          </li>
+          <li>
+            <label>
+              Email:
+              <input
+                type="email"
+                name="email"
+                value={inputs.email || ""}
+                onChange={handleChange}
+              />
+            </label>
+          </li>
+          <li>
+            <label>
+              Message:
+              <textarea name="message" onChange={handleChange} />
+            </label>
+          </li>
+          <input type="submit" />
+        </ul>
+      </form>
+    </div>
   );
 }
 

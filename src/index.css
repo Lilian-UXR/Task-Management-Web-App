@@ -56,9 +56,23 @@ button {
   padding: 10px;
 }
 
+.task-add input[type="text"] {
+  background-color: #ccf6f6;
+}
+
 .button:hover {
   background-color: #ccf6f6;
   color: #000000;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  height: 100%;
+  width: 100%;
+  background-color: #d9d9d9;
 }
 
 input[type="text"],
@@ -69,6 +83,16 @@ input[type="email"] {
   border: none;
   color: #000000;
   border-radius: 5px;
+}
+
+input[type="submit"] {
+  font-size: 20px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #488a92;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 textarea {
