@@ -67,7 +67,6 @@ input[type="email"] {
   font-size: 20px;
   padding: 15px;
   border: none;
-  background-color: #ccf6f6;
   color: #000000;
   border-radius: 5px;
 }
@@ -75,16 +74,18 @@ input[type="email"] {
 textarea {
   width: auto;
   font-size: 20px;
-  padding: 25px 15px;
+  padding: 45px 25px;
   height: 50px;
   border: none;
-  background-color: #ccf6f6;
   color: #000000;
   border-radius: 5px;
+  margin: 10px;
 }
 
 .contact-form {
   list-style-type: none;
+  background-color: #ccf6f6;
+  padding: 20px 200px;
 }
 
 .todo-item {
