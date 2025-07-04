@@ -1,7 +1,7 @@
 import Home from "./Components/Home.jsx";
 import ToDo from "./Components/todo.jsx";
 import ContactForm from "./Components/contact.jsx";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./Components/sidebar.jsx";
 import Hamburger from "./Components/hamburger.jsx";
 import { createContext, useState } from "react";
