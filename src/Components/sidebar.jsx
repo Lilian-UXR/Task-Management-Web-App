@@ -26,7 +26,7 @@ function Sidebar() {
           <Link to="/contact">
             <div className="nav-link">
               <img src={Contact} alt="contact icon" />
-              <p>Contact Form</p>
+              <p>Contact</p>
             </div>
           </Link>
         </li>

@@ -99,7 +99,9 @@ function ToDo() {
                 checked={task.completed}
                 onChange={() => updateTasks(index)}
               />
-              <span className="text">{task.task}</span>
+              <span className={`text ${task.completed ? "completed" : ""}`}>
+                {task.task}
+              </span>
               <button className="deletebtn" onClick={() => deleteTask(index)}>
                 Delete
               </button>

@@ -8,14 +8,14 @@
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   background-color: #ffffff;
-  width: 800px;
+  width: 100%;
 }
 
 .todo-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8rem;
+  padding: 4rem 8rem;
   height: 100%;
   width: 100%;
   background-color: #d9d9d9;
@@ -38,7 +38,30 @@ h1 {
 
 h2 {
   margin-top: 4rem;
+  margin-bottom: 20px;
   flex: 0.1 1 0;
+}
+
+.recent {
+  margin: 25px;
+  align-self: flex-start;
+}
+
+.btnwrap {
+  display: flex;
+  gap: 10px;
+}
+
+.recentbtn {
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+  align-items: center;
+  background-color: #000000;
+}
+
+.recentbtn img {
+  width: 20px;
 }
 
 button {
@@ -54,6 +77,7 @@ button {
 .task-add {
   display: flex;
   padding: 10px;
+  gap: 10px;
 }
 
 .task-add input[type="text"] {
@@ -85,6 +109,12 @@ input[type="email"] {
   border-radius: 5px;
 }
 
+label {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
 input[type="submit"] {
   font-size: 20px;
   padding: 10px 20px;
@@ -98,12 +128,11 @@ input[type="submit"] {
 textarea {
   width: auto;
   font-size: 20px;
-  padding: 45px 25px;
+  padding: 10px 25px;
   height: 50px;
   border: none;
   color: #000000;
   border-radius: 5px;
-  margin: 10px;
 }
 
 .contact-form {
@@ -114,6 +143,7 @@ textarea {
 
 .todo-item {
   font-size: 20px;
+  margin: 10px;
   padding: 10px;
   background-color: #a6edf2;
   color: #000000;
@@ -121,6 +151,10 @@ textarea {
   border-radius: 5px;
   display: flex;
   align-items: center;
+}
+
+.allfilterbtn {
+  align-self: flex-start;
 }
 
 .text {
@@ -161,6 +195,10 @@ textarea {
 
 .mobile {
   display: none;
+}
+
+.completed {
+  text-decoration: line-through;
 }
 
 @media only screen and (max-width: 600px) {

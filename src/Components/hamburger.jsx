@@ -38,7 +38,7 @@ function Hamburger() {
               <Link to="/contact">
                 <div className="mobile-link" onClick={handleOpen}>
                   <img src={Contact} alt="contact icon" />
-                  <p>Contact Form</p>
+                  <p>Contact</p>
                 </div>
               </Link>
             </li>
